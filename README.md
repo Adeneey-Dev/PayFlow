@@ -30,48 +30,48 @@ Paylow is a **secure digital wallet backend** built with **Node.js** and **Expre
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 PayLow/
 │
 ├── src/
 │   ├── config/
-│   │   ├── db.js              # MongoDB connection
-│   │   ├── flutterwave.js     # Flutterwave configuration
-│   │   └── mailer.js          # Nodemailer configuration
-│   │
-│   ├── controllers/
-│   │   ├── authController.js     # Register/Login logic
-│   │   ├── walletController.js   # Wallet operations
-│   │   ├── paymentController.js  # Payment funding & verification
-│   │   └── transferController.js # Peer-to-peer transfers
-│   │
-|   ├── middlewares/
-│   │   ├── authorization.js     # Authorization logic
-│   │   ├── isAdmin.js           # Verify if it's Admin or User
-|   |
-│   ├── models/
-│   │   ├── otpModel.js         # OTP schema
-│   │   ├── userModel.js        # Wallet schema
-│   │   ├── walletMmodel.js     # Wallet schema
-│   │   └── transactionModel.js # Transaction schema
-│   │
-│   ├── routes/
-│   │   ├── authRoutes.js     # Auth endpoints
-│   │   ├── walletRoutes.js   # Wallet endpoints
-│   │   └── paymentRoutes.js  # Payment endpoints
-│   │
-│   ├── utils/
-│   │   ├── jwt.js             # JWT generation & verification
-│   │   ├── sendMail.js        # Email sending function
-│   │   ├── sendSMS.js         # SMS sending function
-|   |   ├── sendOtp.js         # Email sending Otp for authorization
-│   │   └── validators.js      # Input validation
-│   │
-│   ├── app.js                 # Express app entry
-│   └── server.js              # Server startup
+│   │   ├── db.js                      # MongoDB connection
+│   │   ├── flutterwave.js              # Flutterwave configuration
+│   │   └── mailer.js                   # Nodemailer configuration
 │
-├── .env                       # Environment variables (ignored by Git)
-├── .gitignore                 # Ignored files
-├── package.json               # Project dependencies
-└── README.md                  # Project documentation
+│   ├── controllers/
+│   │   ├── authController.js           # Register/Login logic
+│   │   ├── walletController.js         # Wallet operations
+│   │   ├── paymentController.js        # Payment funding & verification
+│   │   └── transferController.js       # Peer-to-peer transfers
+│
+│   ├── middlewares/
+│   │   ├── authorization.js            # Authorization logic
+│   │   ├── isAdmin.js                   # Verify if it's Admin or User
+│
+│   ├── models/
+│   │   ├── otpModel.js                  # OTP schema
+│   │   ├── userModel.js                 # User schema
+│   │   ├── walletModel.js               # Wallet schema
+│   │   └── transactionModel.js          # Transaction schema
+│
+│   ├── routes/
+│   │   ├── authRoutes.js                # Auth endpoints
+│   │   ├── walletRoutes.js              # Wallet endpoints
+│   │   └── paymentRoutes.js             # Payment endpoints
+│
+│   ├── utils/
+│   │   ├── jwt.js                       # JWT generation & verification
+│   │   ├── sendMail.js                  # Email sending function
+│   │   ├── sendSMS.js                   # SMS sending function
+│   │   ├── sendOtp.js                   # Email OTP for authorization
+│   │   └── validators.js                # Input validation
+│
+│   ├── app.js                           # Express app entry
+│   └── server.js                        # Server startup
+│
+├── .env                                 # Environment variables (ignored by Git)
+├── .gitignore                           # Ignored files
+├── package.json                         # Project dependencies
+└── README.md                            # Project documentation
