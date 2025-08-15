@@ -75,3 +75,6 @@ PayLow/
 ├── .gitignore                           # Ignored files
 ├── package.json                         # Project dependencies
 └── README.md                            # Project documentation
+
+**Author:** Adeneey_Dev
+**Email:** Oyewolesaheed638@gmail.com
